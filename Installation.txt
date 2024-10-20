@@ -1,0 +1,6 @@
+Follow these steps to successfully run this project:
+- run "npm install"
+- run "npx pod-install" (ios only)
+- run "npm run start"
+
+Note: This project is already using a firebase project (just for educational purposes), you can replace firebase configs in config/firebase.js.
