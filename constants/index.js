@@ -1,22 +1,23 @@
+/* eslint-disable prettier/prettier */
 export const categories = [
     {
-        title: 'Food',
-        value: 'food'
+        title: 'Dining',
+        value: 'food',
     },
     {
         title: 'Shopping',
-        value: 'shopping'
+        value: 'shopping',
     },
     {
-        title: 'Entertainment',
-        value: 'entertainment'
+        title: 'Leisure',
+        value: 'entertainment',
     },
     {
-        title: 'Commute',
-        value: 'commute'
+        title: 'Transport',
+        value: 'commute',
     },
     {
-        title: 'Other',
-        value: 'other'
+        title: 'Miscellaneous',
+        value: 'other',
     },
 ]

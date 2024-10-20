@@ -14,19 +14,19 @@ import { expensesRef } from '../config/firebase';
 const items = [
     {
         id: 1,
-        title: 'ate sandwitch',
+        title: 'ate bread',
         amount: 4,
         category: 'food'
       },
       {
         id: 2,
-        title: 'bought a jacket',
+        title: 'bought a shoes',
         amount: 50,
         category: 'shopping'
       },
       {
         id: 3,
-        title: 'watched a movie',
+        title: 'watched spiderman',
         amount: 100,
         category: 'entertainment'
       }
@@ -99,3 +99,6 @@ export default function TripExpensesScreen(props) {
     </ScreenWrapper>
   )
 }
+
+
+

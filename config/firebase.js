@@ -1,34 +1,28 @@
-// Import the functions you need from the SDKs you need
+// Import necessary functions from Firebase SDK
 import {initializeApp} from 'firebase/app';
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 import {getAuth} from 'firebase/auth';
 import {getFirestore, collection} from 'firebase/firestore';
-// Your web app's Firebase configuration
-// const firebaseConfig = {
-//   apiKey: 'AIzaSyDnIMhCEZq-i58SasDAGMqh9JQrsoNaw-k',
-//   authDomain: 'expensify-7eb9a.firebaseapp.com',
-//   projectId: 'expensify-7eb9a',
-//   storageBucket: 'expensify-7eb9a.appspot.com',
-//   messagingSenderId: '1087326471215',
-//   appId: '1:1087326471215:web:15abffe23e2853eda032da',
-// };
-//my config
+
+// Firebase configuration object containing the necessary details
 const firebaseConfig = {
-  apiKey: 'AIzaSyBImHx7-hMM7dAfdmS2JgM39fcKBIfVVaA',
-  authDomain: 'expensify-7480c.firebaseapp.com',
-  projectId: 'expensify-7480c',
-  storageBucket: 'expensify-7480c.appspot.com',
-  messagingSenderId: '713681478913',
-  appId: '1:713681478913:web:dca16830ec35bdb35fe700',
+  apiKey: 'AIzaSyBImHx7-hMM7dAfdmS2JgM39fcKBIfVVaA', // API key for your Firebase project
+  authDomain: 'expensify-7480c.firebaseapp.com', // Auth domain for authentication
+  projectId: 'expensify-7480c', // Project ID for Firestore and other services
+  storageBucket: 'expensify-7480c.appspot.com', // Storage bucket for file storage
+  messagingSenderId: '713681478913', // Messaging sender ID (for Firebase Cloud Messaging)
+  appId: '1:713681478913:web:dca16830ec35bdb35fe700', // App ID for identifying your Firebase app
 };
 
-// Initialize Firebase
+// Initialize Firebase app with the given configuration
 const app = initializeApp(firebaseConfig);
-export const db = getFirestore(app);
-export const auth = getAuth(app);
 
-export const tripsRef = collection(db, 'trips');
-export const expensesRef = collection(db, 'expenses');
+// Initialize Firestore and Authentication services
+export const db = getFirestore(app); // Firestore database instance
+export const auth = getAuth(app); // Firebase authentication instance
 
+// Define references to specific collections in Firestore
+export const tripsRef = collection(db, 'trips'); // Reference to the 'trips' collection
+export const expensesRef = collection(db, 'expenses'); // Reference to the 'expenses' collection
+
+// Export the initialized Firebase app instance
 export default app;
